@@ -1,5 +1,5 @@
-import { MyStack } from "./MyStack";
 import { App } from "@serverless-stack/resources";
+import { StorageStack } from "./StorageStack";
 
 /**
  * @param {App} app
@@ -12,5 +12,5 @@ export default function (app) {
       format: "esm",
     },
   });
-  app.stack(MyStack);
+  app.stack(StorageStack);
 }
